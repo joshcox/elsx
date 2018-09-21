@@ -2,7 +2,7 @@
   "name": "elsx",
   "description": "General Dom Object Generator; Possible JSX compilation target",
   "version": "0.0.0",
-  "keywords": ["dom", "jsx", "createElement"],
+  "keywords": ["dom", "jsx", "createElement", "el"],
   "homepage": "https://joshcox.github.io/elsx/",
   "repository": {
     "type": "git",
