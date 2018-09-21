@@ -5,7 +5,7 @@ interface Attributes {
 /**
  * Generate a DOM Element
  */
-const el = (tag: string, attributes: Attributes, children: HTMLElement[]) =>
+export const el = (tag: string, attributes: Attributes, children: HTMLElement[]) =>
     children.reduce((e: HTMLElement, child: HTMLElement): HTMLElement => {
         e.appendChild(child);
         return e;
