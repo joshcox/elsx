@@ -1,8 +1,12 @@
-interface ELSX {
-    (tag: string): HTMLElement;
+interface Attributes {
+    [name: string]: any
 }
 
 /**
  * Generate a DOM Element
  */
-const el: ELSX = (tag) => document.createElement(tag);
+const el = (tag: string, attributes: Attributes) =>
+    Object.keys(attributes).reduce((e: HTMLElement, key: string): HTMLElement => {
+        e.setAttribute(key, attributes[key]);
+        return e;
+    }, document.createElement(tag));
