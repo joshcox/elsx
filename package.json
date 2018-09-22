@@ -30,7 +30,7 @@
     "deploy:docs": "npm run clean:api && npm run docs && gh-pages -d api -m \"Update: Docs\"",
     "docs": "typedoc --options typedoc.json",
     "lint": "tslint -p tsconfig.json -t stylish",
-    "test": "jest --config jest.config.js --forceExit --color --detectOpenHandles",
+    "test": "jest",
     "test:watch": "jest --config jest.config.js --color --detectOpenHandles --watchAll"
   },
   "main": "./lib/index.js",
