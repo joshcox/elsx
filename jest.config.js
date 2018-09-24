@@ -11,6 +11,6 @@ module.exports = {
     "testMatch": ["<rootDir>/test/**/*.ts"],
     "testPathIgnorePatterns": ["/node_modules/", "/fixtures/"],
     "watchPathIgnorePatterns": ["/fixtures/"],
-    "testEnvironment": "node",
+    "testEnvironment": "jsdom",
     "verbose": true
 };
